@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <locale.h>
+
 
 int main()
 {
 
-    setlocale(LC_ALL, "portuguese");
+    
 
     char nomeProduto[99][200];
     float preco[99];
@@ -14,7 +14,7 @@ int main()
     int i = 0;
     int j = 0;
     int escolha = 0;
-    float totalVendas = 0;
+    float total = 0;
 
     do
     {
@@ -34,13 +34,13 @@ int main()
 
             printf("Digite a quantidade do produto: ");
             scanf("%d", &quantidade[i]);
-            totalVendas = totalVendas + preco[i];
+            total = total + preco[i];
             i = i + 1;
         }
 
     } while (escolha == 1);
 
-    printf("Total de vendas foi de R$ %.1f\n", totalVendas);
+    printf("Total de R$ %.1f\n", total);
 
     return 0;
 }
