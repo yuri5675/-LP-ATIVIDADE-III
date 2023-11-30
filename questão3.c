@@ -18,7 +18,7 @@ int main()
         printf("1 - Para continuar cadastrando\n");
         printf("2 - Para  mostrar os numeros\n");
         scanf("%d", &resposta);
-        puts("");
+        
 
         if (resposta == 1)
         {
